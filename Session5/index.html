@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function changeContent()
+{
+    document.getElementById("demo").innerHTML = 'salammm !!! '
+}
+
+function changeContentss(word, age)
+{
+    document.getElementById("demo").innerHTML = word + '  ' + age
+}
+
+function sums(p1, p2)
+{
+    var z = p1 + p2
+    return z
+}
+</script>
+
+</head>
+<body>
+    <h2>JavaScript </h2>
+    <p id="demo"> this is p </p>
+
+    <script>
+    document.getElementById("demo").innerHTML = 'salam' 
+    console.log('salam')
+
+    var x = 2 
+    console.log(x)
+    document.getElementById("demo").innerHTML = x
+    var y
+    y = 3
+    console.log(y) 
+    x = 5
+    var z = x+y
+    console.log(z)
+
+    console.log(3 **3)
+    console.log(++x)
+
+    z+= x  // z = z+x
+    console.log('z',z)
+
+    var str = 'I am ZOHA'
+    document.getElementById("demo").innerHTML = str
+    console.log(str)
+
+    var conversation = {
+        name: 'zoha',
+        latestMessageDate: 23/10/2019,
+        latestMessage: 'Hi',
+        unseenMessage: '2'
+    }
+
+    changeContent()
+    changeContentss('zoha', '30')
+    document.getElementById("demo").innerHTML = sums(2, 4)
+
+    var result = sums(2, 4)
+    document.getElementById("demo").innerHTML = result
+
+
+
+
+
+    </script>
+</body>
+</html>

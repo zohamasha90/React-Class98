@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+        function change()
+        {
+            document.getElementById("p1").innerHTML = 'kkkk'
+
+        }
+        </script>
+    </head>
+ <!--   <body onload='change()'> -->
+        <body >
+        <h2> JavaScript </h2>
+        <p id="p1"> hihiihi </p>
+        <button onclick="firstLetter('Hello js !')">click Me </button>
+        <script>
+        function greeting(){
+            var name = 'zoha'
+            document.getElementById("p1").innerHTML = 'hello ' +'  ' + name
+        }
+
+        function firstLetter(word){
+            
+            document.getElementById("p1").innerHTML = word[0]
+            console.log(word.length)
+            console.log('222',word.indexOf('js'))            
+            
+        }
+
+        function index(s,w)
+        {
+            console.log('333',s.indexOf(w))
+            console.log('444',s.lastIndexOf(w))    
+        }
+
+        index('it is wednesday is!' , 'is')
+        
+
+        function transition(word){
+            console.log('555',word.toUpperCase())    
+            console.log('555',word.toLowerCase())   
+
+        }
+
+        transition('zohaaa') 
+
+        function slices (word){
+            console.log('6666',word.slice(4))    
+            console.log('6666',word.slice(3,9))   
+        }
+
+        slices('how are you')
+
+        function uplowcase(word)
+        {
+            var zz = word[0].toUpperCase()
+            var nn = word.slice(1)
+            console.log('7777',zz+nn)
+        }
+
+        uplowcase('hosein')
+
+        var str = 'it is rainy day'
+        var ssss = str.search('is')
+        console.log('***' , ssss)
+        console.log('$$$$' , str.replace('rainy', 'sunny'))
+
+        console.log('###' , str.concat(' ', 'hhhhhh','  ', 'iiiii','  ', 'ooooo'))
+
+        var email = '  zoha@masha.com     '
+
+        console.log(email.trim())
+
+        var n1 = '10.234545'
+        var n2 = '20'
+        console.log(n1+n2)
+        console.log(n1-n2)
+        console.log(n1*n2)
+        console.log(n1/n2)
+
+        var n3 = 30.557674423
+        var n4 = 40
+        console.log(n2+n4 +n3)
+        console.log(n4+n3+Number(n1)+n3+n4)
+        console.log(typeof n3.toString())
+
+        var n5 = 10.5555
+        console.log(n5.toFixed(0))
+        console.log(parseInt(n1),typeof n1, typeof parseInt(n1))
+
+var dates = new Date()
+        document.getElementById("p1").innerHTML = dates
+        document.getElementById("p1").innerHTML = new Date(dates.getTime()) 
+
+
+
+        </script>
+    </body>
+</html>
