@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+    <h2> Java Script </h2>
+    <button onclick='loops3()'>  Click Me </button>
+    <div id='demo'></div>
+    <input id='num'>
+    
+
+    <script>
+    function loops(){
+        for(var i = 0 ; i <= 3  ; i++){
+            console.log(i)
+        }
+    }
+
+    function loops2(){
+        var arr = ['a','b','c','d','t']
+        var i
+        var b = arr.length
+        for(i = 0 ; i < b ; i++){
+            console.log(arr[i])
+        }
+    }
+
+    function loops3(){
+        var arr = ['a','b','c','d','t']
+        var content = ''
+        var bb = arr.length
+
+        for(var i = 0 ; i < bb  ; i++){
+            content += '<p style=" color:red">' + arr[i] + '</p>'    // content = content + '<p>' + arr[i] + '</p>'            
+            //console.log(i)
+        }
+        document.getElementById('demo').innerHTML = content
+    }
+
+
+    {
+        let jj = 10         // let & const shabihe ham hastand
+        {
+            let jj = 15
+            console.log('^^^',jj)
+        }
+        console.log('$$$',jj)
+    }
+    {
+        var jj = 10
+        {
+            var jj = 15
+            console.log('!!^^',jj)
+        }
+        console.log('$&&$$',jj)
+    }
+
+    // {
+    //     const jj = 10                // meghdari k gharar nist aslan taghir kone dg!
+    //     {
+    //         var jj = 15
+    //         console.log('***^',jj)
+    //     }
+    //     console.log('%%%',jj)
+    // }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+<h2> Java Script </h2>
+<button onclick="concatItem()"> click here! </button>
+<span id="demo"></span>
+<input id="myInput">
+<input id="myInput2">
+
+        <script>
+        function getValue()
+        {
+        //    var x = document.getElementById('myInput').value()
+        //    var y = document.getElementById('myInput2').value()
+            console.log(x)
+            console.log(Number(x)+parseInt(y))
+        }
+
+        var conversation = {
+            name: 'zoha',
+            family:'masha',
+            latestMessageDate: '21',
+            'unseen-message':{
+                receiver: 3,
+                sender: 0,
+            },
+            latestMessage:'dddfdfdf',
+            fullName: function(){
+                console.log('this :::', this)
+                return this.name + ' ' + this.family 
+            }
+        }
+
+        console.log('111', conversation.name, conversation['family'],
+        conversation['unseen-message'].sender
+        )
+
+        var fullname = conversation.fullName()
+
+        console.log('2222', fullname)
+
+        var arr = [1,2,3]
+        arr=[1,3, 'zoha']
+        console.log('333', arr)
+        
+        var list = [1 , 5]
+
+        console.log(list[1])
+        console.log(list.length)
+
+        var conversationList = [
+            {
+                name: 'zoha',
+                family:'masha',
+                latestMessage:'hi'
+            },
+            {
+                name: 'zzz',
+                family:'mmmm',
+                latestMessage:'hiss'
+            },
+            {
+                name:'sss',
+                family:'eee'
+            }
+        ]
+
+        console.log('@@', conversationList[0].name , conversationList.length)
+
+        function pushItem(){            // Add Items to Array
+        var z =  conversationList.push('hhh')
+            console.log(conversationList)
+            console.log(z)   // length of Array ro mide
+        }
+
+        function popItem(){         // Delete last Item of Array
+            var xx = conversationList.pop()
+         console.log(conversationList)
+            console.log(xx)         // chizi k hazf karde barmigardoone
+        }
+
+        function shiftItem(){   // Delete first Item of Array
+        var ii =   conversationList.shift()
+         console.log(conversationList)
+            console.log(ii)         // chizi k hazf karde barmigardoone
+        }
+
+        function unshiftItem(){   // be avali ezafe mikonad
+      //  var jj =   conversationList.unshift('888')
+       //  console.log(conversationList)
+        //    console.log(jj)         // length of Array ro mide
+
+            conversationList.unshift({
+                name:'sss',
+                family:'eee'
+            })
+            console.log(conversationList)
+        }
+
+        function deleteItem(){   // Delete mikone vali jash empty minevise 
+            delete conversationList[2] 
+            console.log(conversationList)
+            
+        }
+
+        function spliceItem(){   // Delete mikone vali jash empty nemimoone 
+        //    conversationList.splice(1,1, {name: 'ali'})
+            conversationList.splice(2,1)
+            console.log(conversationList)            
+        }
+
+        function concatItem(){   // 2 array ra be ham michasbanad
+            var aa= [1, 7]
+            var bbb = [4,6,9]
+            
+            console.log(aa.concat(bbb))            
+        }
+
+        
+
+        </script>
+    </body>
+</html>

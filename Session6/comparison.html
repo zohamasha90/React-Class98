@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+    <h2> Java Script </h2>
+    <button onclick='comparison3()'>  Click Me </button>
+    <input id='age'>
+    <p id='demo'></p>
+
+    <script>
+        function comparison()
+        {
+            var age = Number(document.getElementById('age').value)
+            // if(age >= 18)
+            // {
+            //     document.getElementById('demo').innerHTML = 'you can drive'
+            // }
+            // else{
+            //     document.getElementById('demo').innerHTML = 'you can not drive'
+            // }
+            age >= 18 
+            ? document.getElementById('demo').innerHTML = 'you can drive' 
+            : document.getElementById('demo').innerHTML = 'you can not drive'
+
+        }
+
+        function getHours1(){
+            var date = new Date().getHours()
+            console.log(date)
+
+            if(date <12){
+                document.getElementById('demo').innerHTML = 'Good Morning'
+            }
+            else if(date < 18){
+                document.getElementById('demo').innerHTML = 'Good Evening'
+            }
+            else{
+                document.getElementById('demo').innerHTML = 'Good Night'
+            }
+
+        }
+
+        function comparison3()
+        {        
+            var day = new Date().getDay()
+            console.log(day)
+           switch(day)
+           {
+               case 0 :
+                    document.getElementById('demo').innerHTML = 'Monday'
+                    console.log(0)
+                    break
+               case 1 :
+                    document.getElementById('demo').innerHTML = 'Tuesday'
+                    console.log(1)
+                    break
+               case 2 : 
+                    document.getElementById('demo').innerHTML = 'Wednesday'
+                    console.log(2)
+                    break
+               case 3 : 
+                    document.getElementById('demo').innerHTML = 'Thursday'
+                    console.log(3)
+                    break
+               case 4 : 
+                    document.getElementById('demo').innerHTML = 'Friday'
+                    console.log(4)
+                    break
+               case 5 :
+                    document.getElementById('demo').innerHTML = 'Saturday'
+                    console.log(5)
+                    break
+                default : 
+                    document.getElementById('demo').innerHTML = 'dfkdhfhd'
+                    console.log(6)                                                      
+           }  
+        }
+
+        
+
+
+
+    
+
+    </script>
+
+
+</body>
+
+</html>
